@@ -184,4 +184,4 @@ php maintenance/run.php update                          # generic
 
 ## License &amp; disclaimer
 
-Provided as-is, without any warranty. MediaWiki, its extensions and their repositories are subject to their respective licenses. Always back up your database before updating.
+Provided as-is, without any warranty. MediaWiki, its extensions and their repositories are subject to their respective licenses. Always back up your database before updating. This script was developed together with Mistral AI.
