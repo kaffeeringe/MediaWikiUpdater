@@ -50,6 +50,7 @@ The script assumes your document root looks like this:
 ```
 
 **Why the central `images/` folder?** Because uploads live outside the release folder, no files have to be moved between versions. The script just deletes the freshly unpacked (empty) `images/` folder in the new release and creates a symlink to the central one. 
+
 ---
 
 ## How it works, step by step
