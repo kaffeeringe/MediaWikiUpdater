@@ -42,7 +42,6 @@ rm -rf images/
 # 7. Symlink zum bestehenden zentralen images/-Ordner erstellen und zum Matomo Verzeichnis
 echo "==> [7/10] Erstelle Symlink für images/..."
 ln -s ../images images
-ln -s ../matomo stats
 
 # 8. Drittanbieter-Extensions per git clonen
 echo "==> Klone Extensions passend für MediaWiki REL${MAJOR_VER//./_}..."
