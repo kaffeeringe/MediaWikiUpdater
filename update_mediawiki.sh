@@ -73,8 +73,6 @@ echo "==> Prüfe und installiere Composer-Abhängigkeiten für Extensions..."
 for ext_dir in */; do
     if [ -f "${ext_dir}composer.json" ]; then
         echo "--> Installiere Abhängigkeiten für Extension: ${ext_dir%/}"
-        /opt/RZphp84/bin/php-cli ../../composer.phar config -d "${ext_dir%/}" policy.advisories.block false 2>/dev/null
-        # 2. Abhängigkeiten ohne Dev-Pakete installieren
         /opt/RZphp84/bin/php-cli ../../composer.phar install -d "${ext_dir%/}" --no-dev --optimize-autoloader --ignore-platform-reqs
     fi
 done
